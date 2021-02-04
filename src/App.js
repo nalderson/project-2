@@ -3,8 +3,7 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom'
 import Home from './components/Home'
 import Results from './components/Results'
 import Navbar from './components/Navbar'
-import Sort from './components/Sort'
-
+import Popular from './components/Popular'
 import './styles/style.scss'
 import 'bulma'
 
@@ -13,7 +12,7 @@ const App = () => {
     <Navbar />
     <Switch>
       <Route exact path="/" component={Home} />
-      <Route exact path="/sort-by" component={Sort} />
+      <Route exact path="/popular" component={Popular} />
       <Route exact path="/results" component={Results} />
     </Switch>
   </BrowserRouter>

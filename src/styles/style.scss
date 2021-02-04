@@ -1,3 +1,4 @@
+
 h1 {
   color: black;
 }
@@ -64,4 +65,16 @@ section {
 .card li {
   list-style: none;
   padding-bottom: 10px;
+}
+
+.popular-movies {
+  .slick-slide img {
+  border-radius: 12px;
+  margin: 15px;
+  width: 25%
+}
+}
+
+.title {
+  font-size: 70px;
 }
