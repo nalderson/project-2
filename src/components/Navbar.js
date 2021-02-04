@@ -8,7 +8,7 @@ export default function Navbar() {
         <Link to={'/'}>Search</Link>
       </a>
       <a className="navbar-item">
-        <Link to={'/results'}>Genre</Link>
+        <Link to={'/sort-by'}>Sort By</Link>
       </a>
     </div>
   </div>

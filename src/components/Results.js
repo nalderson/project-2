@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import axios from 'axios'
-import { Link } from 'react-router-dom'
 
 export default function Results({ location }) {
 
@@ -19,31 +18,20 @@ export default function Results({ location }) {
 
   }, [])
 
-  return <div className="movie-container">
+  return <div className="cards">
     {results.map(result => {
-      return <div key={result.id}>
-        <h1>{result.original_title}</h1>
-        <h5>{result.release_date}</h5>
-        <p>{result.overview}</p>
-        <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt={result.name}/>
+      return <div className="card" key={result.id}>
+        <img className="card-front" src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt={result.name} />
+        <div className="card-inner">
+          <div className="card-back">
+            <h1>{result.original_title}</h1>
+            <h5>{result.release_date}</h5>
+            <p>{result.overview}</p>
+          </div>
+        </div>
       </div>
     })}
   </div >
 
-
-
-
 }
 
-
-// { results: { known_for: { original_title } } }
-
-        // return <Link key={result.id} to={{
-        //   pathname: `/results/${result.id}`,
-        //   state: {
-        //     name: result.original_title,
-        //     // image: result.results.poster_path,
-        //     release: result.release_date,
-        //     overview: result.overview
-        //   }
-        // }}>

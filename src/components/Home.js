@@ -5,20 +5,14 @@ import { useState } from 'react'
 export default function Home() {
 
   const [inputText, updateInputText] = useState('')
-  const [select, updateSelect] = useState(['Actor', 'Film', 'Genre'])
-  console.log(inputText)
-  console.log(select)
-  
-  return <div>
-    <div>
-      {/* <select onChange={(event) => updateSelect(event.target.value)}
-      >
-        <option value="Actor">Actor</option>
-        <option value="Film">Film</option>
-        <option value="Genre">Genre</option>
-      </select> */}
-      <div>
-        <input
+
+  return <div className="hero is-danger is-fullheight">
+    <div className="hero-body">
+      <div className="">
+        <p className="title">
+          Fullheight hero
+        </p>
+        <input className="input is-rounded"
           placeholder="Enter your movie..."
           type="text"
           onChange={(event) => updateInputText(event.target.value)}
@@ -27,10 +21,7 @@ export default function Home() {
         <Link className="button is-outlined is-rounded"
           to={{
             pathname: '/results',
-            state: {
-              select,
-              inputText
-            }
+            state: { inputText }
           }}>
           Search!
         </Link>
