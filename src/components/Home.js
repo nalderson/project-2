@@ -5,18 +5,18 @@ import { useState } from 'react'
 export default function Home() {
 
   const [inputText, updateInputText] = useState('')
-  const [select, updateSelect] = useState(['Actor', 'Film Title', 'Genre'])
+  const [select, updateSelect] = useState(['Actor', 'Film', 'Genre'])
   console.log(inputText)
   console.log(select)
   
   return <div>
     <div>
-      <select onChange={(event) => updateSelect(event.target.value)}
+      {/* <select onChange={(event) => updateSelect(event.target.value)}
       >
         <option value="Actor">Actor</option>
-        <option value="Film">Film Title</option>
+        <option value="Film">Film</option>
         <option value="Genre">Genre</option>
-      </select>
+      </select> */}
       <div>
         <input
           placeholder="Enter your movie..."
