@@ -37,25 +37,27 @@ export default function Home() {
   }, [])
 
 
-  return <div className="hero is-danger is-fullheight">
-    <div className="hero-body">
-      <div className="">
-        <p className="title">
+  return <div className="hero is-danger is-fullheight ">
+    <div className="hero-body is-justify-content-center">
+      <div className="has-text-centered ">
+        <p className="title is-size-1">
           Fullheight hero
         </p>
-        <input className="input is-rounded"
-          placeholder="Enter your movie..."
-          type="text"
-          onChange={(event) => updateInputText(event.target.value)}
-          value={inputText}
-        />
-        <Link className="button is-outlined is-rounded"
-          to={{
-            pathname: '/results',
-            state: { inputText }
-          }}>
-          Search!
-        </Link>
+        <div className="is-flex-direction-row">
+          <input className="input is-rounded"
+            placeholder="Enter your movie..."
+            type="text"
+            onChange={(event) => updateInputText(event.target.value)}
+            value={inputText}
+          />
+          <Link className="button is-outlined is-rounded"
+            to={{
+              pathname: '/results',
+              state: { inputText }
+            }}>
+            Search!
+          </Link>
+        </div>
       </div>
       <Slider {...settings} style={sliderStyle}>
         {popular.map(result => {
