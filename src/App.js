@@ -11,9 +11,9 @@ const App = () => {
   return <BrowserRouter>
     <Navbar />
     <Switch>
-      <Route exact path="/" component={Home} />
-      <Route exact path="/popular" component={Popular} />
-      <Route exact path="/results" component={Results} />
+      <Route exact path="/project-2/" component={Home} />
+      <Route exact path="/project-2/popular" component={Popular} />
+      <Route exact path="/project-2/results" component={Results} />
     </Switch>
   </BrowserRouter>
 
