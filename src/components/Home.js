@@ -54,7 +54,7 @@ export default function Home() {
           <div className="control">
             <Link className="button is-outlined is-rounded is-right is-block"
               to={{
-                pathname: '/results',
+                pathname: '/project-2/results',
                 state: { inputText }
               }}>
               Search
@@ -64,7 +64,7 @@ export default function Home() {
       </div>
       <Slider {...settings} style={sliderStyle}>
         {popular.map(result => {
-          return <Link to={{ pathname: '/popular' }}
+          return <Link to={{ pathname: '/project-2/popular' }}
             className="popular-movies" key={popular.id}>
             <img src={`https://image.tmdb.org/t/p/original/${result.poster_path}`} alt={popular.name} />
           </Link>

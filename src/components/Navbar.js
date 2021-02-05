@@ -11,10 +11,10 @@ export default function Navbar() {
 
     <div className="navbar-end ">
       <a className="navbar-item">
-        <Link to={'/'}>Search</Link>
+        <Link to={'/project-2/'}>Search</Link>
       </a>
       <a className="navbar-item">
-        <Link to={'/popular'}>Popular Movies</Link>
+        <Link to={'/project-2/popular'}>Popular Movies</Link>
       </a>
     </div>
   </div>
