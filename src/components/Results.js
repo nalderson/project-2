@@ -27,6 +27,8 @@ export default function Results({ location }) {
       </div>
     })}
   </div >
-
 }
+
+
+
 

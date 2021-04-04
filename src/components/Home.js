@@ -29,7 +29,6 @@ export default function Home() {
     axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=${process.env.apikey}&language=en-US&page=1`)
       .then(({ data }) => {
         updatePopular(data.results)
-        // updateLoading(false)
         console.log(data.results)
       })
 
