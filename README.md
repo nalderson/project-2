@@ -104,6 +104,10 @@ Additionally, if users clicked on the carousel on the Homepage or the link in th
 - The Movie DB API was a little more complicated than we realised. There were a lot of different endpoints, with nested fields so it took some time to work this out
 - The short time frame was a challenge, as the above technical issues slowed us down meaning we weren’t able to implement as many stretch goals as we intended 
 
+## Lessons Learned:
+- This was the first time we had built in React, so it was nice to cement what we learnt in class and put it into practice
+- I learnt how to integrate a third party API, use Axios & implement template Literals 
+
 ## Future Features:
 - Ability to search by actor, as well as title 
 - Potential to filter movies by genre
