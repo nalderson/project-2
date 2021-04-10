@@ -15,7 +15,7 @@ Build a multi-page React application that consumes a public RESTful API, uses Re
 ## About the Project: 
 Film Finder is a simple app that allows users to search for films by titles and get information on those movies, such as Jaws. Additionally, users are able to browse The Movie DB’s popular movies and find out information on them too.
 
-You can check out the deployed project here: [](https://nalderson.github.io/project-2/)
+You can check out the deployed project here: [Film-Finder](https://nalderson.github.io/project-2/)
 
 Technologies used:
 - HTML5
